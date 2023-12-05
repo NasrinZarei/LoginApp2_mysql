@@ -1,11 +1,12 @@
 package loginapp2;
 
+import interfaces.interfaces;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-public class Validation {
+public class Validation implements interfaces {
 
     public boolean validRequirements(String nameandfamily, String email, String password) {
         // This method validates the minimum requirements for user input: name, email, and password must all be non-empty.
