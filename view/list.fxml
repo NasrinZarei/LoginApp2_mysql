@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane id="AnchorPane" prefHeight="550.0" prefWidth="500.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ListController">
+   <children>
+      <VBox prefHeight="550.0" prefWidth="500.0" style="-fx-background-color: #9DD3FC;">
+         <children>
+            <TableView fx:id="tableView" prefHeight="498.0" prefWidth="500.0">
+              <columns>
+                <TableColumn fx:id="id" prefWidth="37.599977135658264" text="#" />
+                <TableColumn fx:id="date" prefWidth="106.39995574951172" text="date" />
+                  <TableColumn fx:id="incomePrice" prefWidth="97.60003662109375" text="incomePrice" />
+                  <TableColumn fx:id="incomeSubject" prefWidth="88.79998779296875" text="incomeSubject" />
+                  <TableColumn fx:id="costPrice" prefWidth="84.0" text="costPrice" />
+                  <TableColumn fx:id="costSubject" prefWidth="88.0" text="costSubject" />
+              </columns>
+            </TableView>
+            <Pane prefHeight="53.0" prefWidth="500.0">
+               <children>
+                  <Button fx:id="delete" layoutX="415.0" layoutY="8.0" mnemonicParsing="false" onAction="#deleteItem" prefHeight="31.0" prefWidth="81.0" text="Delete" />
+                  <Button fx:id="backList" layoutX="7.0" layoutY="11.0" mnemonicParsing="false" onAction="#backList" prefHeight="31.0" prefWidth="81.0" text="Back" />
+               </children>
+            </Pane>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

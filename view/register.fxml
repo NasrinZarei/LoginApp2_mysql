@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="400.0" style="-fx-background-color: #9DD3FC;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.RegisterController">
+   <children>
+      <GridPane layoutX="21.0" layoutY="74.0" prefHeight="364.0" prefWidth="334.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="232.8" minWidth="10.0" prefWidth="139.19996337890626" />
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="182.20001220703125" minWidth="0.0" prefWidth="148.60003662109375" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints maxHeight="73.79999389648438" minHeight="10.0" prefHeight="60.99998321533204" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="119.19998779296876" minHeight="10.0" prefHeight="80.79999999999998" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="164.79998168945315" minHeight="10.0" prefHeight="64.80000000000001" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="129.39999999999998" minHeight="10.0" prefHeight="77.59999999999997" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="93.39999999999998" minHeight="10.0" prefHeight="93.39999999999998" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Label prefHeight="30.0" prefWidth="147.0" text="       Name&amp;Family :" textAlignment="CENTER">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label prefHeight="30.0" prefWidth="108.0" text="        Phone :" textAlignment="CENTER" GridPane.rowIndex="1">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label prefHeight="30.0" prefWidth="108.0" text="        Email:" GridPane.rowIndex="2">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label prefHeight="30.0" prefWidth="108.0" text="        Password :" GridPane.rowIndex="3">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <Button fx:id="save" mnemonicParsing="false" onAction="#saveUser" prefHeight="34.0" prefWidth="110.0" text="SignUp" GridPane.columnIndex="1" GridPane.rowIndex="4">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font></Button>
+            <TextField fx:id="nameandfamily" prefHeight="26.0" prefWidth="126.0" promptText="Name&amp;Family" GridPane.columnIndex="1" />
+            <TextField fx:id="phone" prefHeight="26.0" prefWidth="126.0" promptText="Phone" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <TextField fx:id="email" prefHeight="26.0" prefWidth="126.0" promptText="Email" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+            <TextField fx:id="password" prefHeight="26.0" prefWidth="126.0" promptText="Password" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+         </children>
+      </GridPane>
+      <Button fx:id="backRegister" layoutX="33.0" layoutY="446.0" mnemonicParsing="false" onAction="#backRegister" prefHeight="26.0" prefWidth="62.0" text="Back">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+      <Text layoutX="149.0" layoutY="46.0" strokeType="OUTSIDE" strokeWidth="0.0" text="SignUp" wrappingWidth="110.39999999999986">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>
